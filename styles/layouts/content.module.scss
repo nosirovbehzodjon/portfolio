@@ -1,0 +1,35 @@
+@import "../colors/main.scss";
+.content {
+    padding: 2rem;
+    background: linear-gradient(40deg, $mainColorPink 35.72%, $mainColorGreen 95.99%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0,0,0, 0.2);
+    }
+    .main {
+        position: relative;
+        min-width: 1400px;
+        min-height: 600px;
+        background: rgba(255, 255, 255, 0.1);
+        box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-right: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        z-index: 10;
+        padding: 20px;
+        backdrop-filter: blur(25px); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
